@@ -24,7 +24,7 @@ export const TextInput = styled.input`
   border-radius: 5px;
 `;
 
-export const sendButton = styled.button`
+export const SendButton = styled.button`
   border: none;
   border-radius: 5px;
   font-size: 16px;

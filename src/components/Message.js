@@ -1,20 +1,20 @@
 import {
   MessageBox,
   MessageContainer,
-  UsernameContainer
+  UsernameContainer,
 } from "./StyledMessage";
 
 export function Message(props) {
   const onDoubleClick = () => {
     if (window.confirm("Tem certeza que deseja deletar essa mensagem?")) {
-      props.deleteMessages(props.message);
+      props.deleteMessage(props.message);
     }
   };
 
   let position;
   let username;
 
-  if (props.message.user === "eu") {
+  if (props.message.user === "Eu") {
     position = "right";
   } else {
     position = "left";
@@ -31,3 +31,5 @@ export function Message(props) {
     </MessageContainer>
   );
 }
+
+export default Message;
